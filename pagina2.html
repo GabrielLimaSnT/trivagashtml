@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html> <!-- Cabeça -->
+	<head>
+		 <!--codificação-->
+         <meta charset="utf-8">
+         <!--Titulo-->
+         <title>Site</title>
+         <!--CSS-->
+         <link rel="stylesheet" href="estilo.css">
+         <!--javascript-->
+         <script src="meuscrip.js"></script>
+        
+
+	</head>
+    <body><!-- Corpo -->
+        
+		<div class="div-titulo">    
+            <!-- <h1> Titulo-->
+            <h1 id="titulo-site" name="titulo">Cadastro</h1> <!--id e name tags de identificações-->
+        </div>
+
+        </br>
+        <img width="500" src="cadastro_clientes.png">
+        </div>
+
+        </br>
+
+        
+        <select required name="Cidade">
+            <option selected value="Selecione">Selecione sua Cidade</option>
+            <option value="SP">São Paulo</option>
+            <option value="RJ">Rio de Janeiro</option>
+        </select>
+        
+        </br>
+
+
+        <div>
+            <p>Selicione as áreas de sua opção:</p>
+            <input checked name="areas" value='BD' type='checkbox'> Banco de Dados
+            <input  name="areas" value='ADS' type='checkbox'> Analise de Sistema
+            <input  name="areas" value='IF' type='checkbox'> Infraestrutura
+        </div>
+        </br>
+        <!--Enviar Arquivo-->
+        <form enctype="multpart/form-data">
+            <input name="arquivo" type="file">
+        </form> 
+        </br>
+        </br>  
+
+        <form> 
+            <textarea name="texto" placeholder="Digite algo sobre você" cols='40' rows="20"></textarea>
+        </br>
+        </form>
+        
+        <ol start='1' type='1'>
+            <li>Cadastro Pessoal</li>
+            <li>Cadastro Empresa</li>
+        </ol>
+        <ul type='square'>
+            <li>TI </li>
+            <li>Vagas</li>
+        </ul>
+        </br>
+        <!-- _blank(nova janela),_self(mesma janela)Padrão-->
+        <a href= "pagina2.html" target=_self >Pagina 2 </a> 
+        </br>
+
+	</body>
+</html>
