@@ -7,8 +7,6 @@
          <title>Cadastro</title>
          <!--CSS-->
          <link rel="stylesheet" href="estilo.css">
-         <!--javascript-->
-         <script src="meuscrip.js"></script>
         
 
 	</head>
@@ -23,10 +21,21 @@
         <img width="500" src="cadastro_clientes.png">
         </div>
 
-        </br>
+        </br></br></br></br></br></br></br></br></br></br></br><br>
+
 
         <div>
-            <h1>Informações Pessoais</h1>
+            <h1><u>Informações Pessoais</u></h1><br>
+             Seu genero é ?
+            <!--radio button--> 
+            <form action="">
+                <input type="radio" name="sexo" value="Masculino"> Masculino<br>
+                <input type="radio" name="sexo" value="Feminino"> Feminino<br>
+                <input type="radio" name="sexo" value="Outro"> Outro
+            </form>
+            </br></br>
+
+            <!--Formulario-->
             <label >Nome</label>
             <input required="required" name="Nome" type="text">
 
@@ -34,7 +43,7 @@
             <input required="required" name="Sobrenome" type="text">
 
             <label >Data de Nascimento</label>
-            <input required="required" name="Sobrenome" type="text"><br>
+            <input required="required" name="Sobrenome" type="text"><br></br>
 
             <label >Endereco</label>
             <input required="required" name="Endereco" type="text">
@@ -43,7 +52,7 @@
             <input required="required" name="Numero" type="text">
 
             <label >Complemento</label>
-            <input required="required" name="Complemento" type="text"><br>
+            <input required="required" name="Complemento" type="text"><br></br>
 
             <label >Bairro</label>
             <input required="required" name="Bairro" type="text">
@@ -51,11 +60,39 @@
             <label >CEP</label>
             <input required="required" name="CEP" type="text">
 
-            <label >Cidade</label>
-            <input required="required" name="Cidade" type="text">
+            <!--drop down list-->
+        <select required name="Estado">
+            <option selected value="Selecione">Selecione seu Estado</option>
+            <option value="AC">Acre (AC)</option>
+            <option value="AL">Alagoas (AL)</option>
+            <option value="AP">Amapá (AP)</option>
+            <option value="AM">Amazonas (AM)</option>
+            <option value="BA">Bahia (BA)</option>
+            <option value="CE">Ceará (CE)</option>
+            <option value="DF">Distrito Federal (DF)</option>
+            <option value="ES">Espírito Santo (ES)</option>
+            <option value="GO">Goiás (GO)</option>
+            <option value="MA">Maranhão (MA)</option>
+            <option value="MT">Mato Grosso (MT)</option>
+            <option value="MS">Mato Grosso do Sul (MS)</option>
+            <option value="MG">Minas Gerais (MG)</option>
+            <option value="PA">Pará (PA)</option>
+            <option value="PB">Paraíba (PB)</option>
+            <option value="PR">Paraná (PR)</option>
+            <option value="PE">Pernambuco (PE)</option>
+            <option value="PI">Piauí (PI)</option>
+            <option value="RJ">Rio de Janeiro (RJ)</option>
+            <option value="RN">Rio Grande do Norte (RN)</option>
+            <option value="RS">Rio Grande do Sul (RS)</option>
+            <option value="RO">Rondônia (RO)</option>
+            <option value="RR">Roraima (RR)</option>
+            <option value="SC">Santa Catarina (SC)</option>
+            <option value="SP">São Paulo (SP)</option>
+            <option value="SE">Sergipe (SE)</option>
+            <option value="TO">Tocantins (TO)</option>
+        </select>
 
-            <label >UF</label>
-            <input required="required" name="UF" type="text"><br>
+        <br></br>
 
             <label >Celular</label>
             <input required="required" name="Celular" type="text">
@@ -64,51 +101,35 @@
             <input required="required" name="Tresidencial" type="text">
 
             <label >Tel Recado</label>
-            <input required="required" name="Recado" type="text"><br>
+            <input required="required" name="Recado" type="text"><br></br>
             
             <label >Email</label>
-            <input required="required" name="Email" type="text"><br>
+            <input required="required" name="Email" type="text"><br></br>
 
             <label >Nome da Mae</label>
-            <input required="required" name="Nome da Mae" type="text"><br>
+            <input required="required" name="Nome da Mãe" type="text"><br></br>
 
             <label >CPF</label>
-            <input required="required" name="CPF" type="text"><br>
+            <input required="required" name="CPF" type="text"><br></br>
 
-           
+            <form action="">
+                Possui alguma deficiencia ?</br>
+                <input type="radio" name="defi" type="text"> Sim
 
-            
-
-
-
-
-
-            
-
-            
-
-
-
-            
-
-
-
-
-
-
+                <input type="radio" name="defi" value="Não"> Não
+            </form>
+            </br>
+            <label >Se Sim qual ?</label>
+                <input required="required" name="Sim" type="text"><br></br>
         </div>
     </br>
-        <select required name="Cidade">
-            <option selected value="Selecione">Selecione sua Cidade</option>
-            <option value="SP">São Paulo</option>
-            <option value="RJ">Rio de Janeiro</option>
-        </select>
+    
         
         </br>
 
 
         <div>
-            <p>Selicione as áreas de sua opção:</p>
+            <p>Selecione as áreas de interesse:</p>
             <input checked name="areas" value='BD' type='checkbox'> Banco de Dados
             <input  name="areas" value='ADS' type='checkbox'> Analise de Sistema
             <input  name="areas" value='IF' type='checkbox'> Infraestrutura
@@ -122,21 +143,12 @@
         </br>  
 
         <form> 
-            <textarea name="texto" placeholder="Digite algo sobre você" cols='40' rows="20"></textarea>
+            <textarea name="texto" placeholder="Conte-nos um pouco da sua história..." cols='40' rows="20"></textarea>
         </br>
         </form>
         
-        <ol start='1' type='1'>
-            <li>Cadastro Pessoal</li>
-            <li>Cadastro Empresa</li>
-        </ol>
-        <ul type='square'>
-            <li>TI </li>
-            <li>Vagas</li>
-        </ul>
-        </br>
         <!-- _blank(nova janela),_self(mesma janela)Padrão-->
-        <a href= "pagina2.html" target=_self >Pagina 2 </a> 
+        <a href= "index.html" target=_self >Pagina Inicial </a> 
         </br>
 
 	</body>
