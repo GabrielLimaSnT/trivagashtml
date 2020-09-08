@@ -3,7 +3,7 @@
 <html>
 
     <head> <!-- Cabeça -->
-        
+
         <!--codificação-->
         <meta charset="utf-8">
         <!--Titulo-->
@@ -14,23 +14,48 @@
         <script src="script.js"></script>
 
     </head>
-    
+
 
 
     <body><!-- Corpo -->
+
 
         <div class="div-titulo">    
     	<!-- <h1> Titulo-->
         <h1 id="titulo-site" name="titulo">Trivagas</h1> <!--id e name tags de identificações-->
         </div>
+        </br>
+
+        <nav id="menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Quem somos</a></li>
+                <li><a href="#">Vagas</a></li>
+                <li><a href="#">Empresas</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+
+        <div id="divBusca">
+            <input type="text" id="txtBusca" placeholder="Buscar..."/>
+            <img src="search3.png" id="btnBusca" alt="Buscar"/>
+        </div>
+
+
+        </br>
+        <div class="foto1">
+        <img  width="500" name="foto" src="negocios.jpeg">
+        </div>
+        </br>
 
         
+
 		<!-- <p> Paragrafo--> 
         <div class="login">     
         <p><strong>Login</strong></p>
         </div> 
         <!-- strong (negrito) em (italico) u (sublinhado) -->
-         
+
 
         <form name="cadastro" action="teste.html" method="POST"> 
 
@@ -39,25 +64,19 @@
             <input type='test' maxlength="20" name="user"/> </br> <!-- maxlength(tamanho) name(variavel)-->
             <label>Senha:</label></br>
             <input type='password'maxlength="20" name="senha"/>
-            <input type="submit"/> <!--manda as informações para o local action --></br>
+            <button name="botao" class="btn" type="submit">Entrar</button><!--manda as informações para o local action --></br>
+            <a href= "senha.html" id="esqueceu" name="cadastro_senha" target=_self color blue >Esqueceu sua senha?</a> 
+
             </br>
-
-
             </br>
             <!-- _blank(nova janela),_self(mesma janela)Padrão-->
-            
-            <a href= "pagina2.html" name="link_cadastro" target=_self color blue >Cadastro</a> 
-            
+
+            <a href= "cadastro.html" name="link_cadastro" target=_self color blue >Clique aqui para fazer o seu Cadastro</a> 
+
             </br>
             </br>
 
-            <div class="email">
-            <p><strong>Digite seu email caso esqueceu sua senha</strong></p>
-            <input name="Email" required="required" type="text" placeholder="Digite seu email">
-            <button type='submit'>Enviar</button></br>
-            </div>
-            </br> 
-            </br>
+        
 
         </form>
             </br>
@@ -69,13 +88,19 @@
         </form>
 
 
-        </br>
-        <div class="foto1">
-        <img  width="500" name="foto" src="negocios.jpeg">
-        </div>
-        </br>
-
         
+        
+
+
+
+
+
+
+
+
+
+
+
         <table width='800' cellspacing='5' border='1'>
             <!--cabeçalho-->
             <thead>
@@ -126,23 +151,9 @@
             </tbody>
 
         </table>
-
-
-
-        <ol start='1' type='1'>
-            <li><a href= "empregos.html" >Empregos</a></li>
-            <li>Novidades</li>
-        </ol>
-        </br>
-
-
-        <ul type='square'>
-            <li>Serviços</li>
-            <li>Oportunidades</li>
-        </ul>
         
-        </br>
-        </br>
+
+
 
 	</body>
 </html>
