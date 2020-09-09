@@ -13,20 +13,17 @@
         <!--javascript-->
         <script src="script.js"></script>
 
-    </head>
+    </head>    
 
 
+    <body background="img/02.jpeg">
 
-    <body background="img/1.jpeg">
+        <img class="img_principal"  src="img/01.jpeg">
+        
 
 
-        <div class="div-titulo">    
-    	<!-- <h1> Titulo-->
-        <h1 id="titulo-site" name="titulo">Trivagas</h1> <!--id e name tags de identificações-->
-        </div>
-        </br>
-
-        <nav id="menu">
+        <div class="menu">
+        <nav>   
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Quem somos</a></li>
@@ -34,40 +31,52 @@
                 <li><a href="#">Empresas</a></li>
                 <li><a href="#">Contato</a></li>
             </ul>
-        </nav>
-
-        <div id="divBusca">
-            <input type="text" id="txtBusca" placeholder="Buscar..."/>
-            <img src="search3.png" id="btnBusca" alt="Buscar"/>
+        </nav>    
         </div>
 
 
-        
+
+
+        <div class="divBusca">
+            <input type="text" id="txtBusca" placeholder="Buscar..."/>
+            <button id="btnBusca">Buscar</button>
+        </div>
 
         
 
-		<!-- <p> Paragrafo--> 
+	
         <div class="login">     
         <p><strong>Login</strong></p>
         </div> 
-        <!-- strong (negrito) em (italico) u (sublinhado) -->
+        
 
 
         <form name="cadastro" action="teste.html" method="POST"> 
 
+            <div class="usuario">
             <!-- Action =Para onde tenho que enviar (aponta), Method GET(buscar informação do servidor)/POST(enviar)-->
-            <label>Usuario:</label></br>
+            <label><strong>Usuario:</strong></label></br>
             <input type='test' maxlength="20" name="user"/> </br> <!-- maxlength(tamanho) name(variavel)-->
-            <label>Senha:</label></br>
+            </div>
+
+            <div class="senha">
+            <label><strong>Senha:</strong></label></br>
             <input type='password'maxlength="20" name="senha"/>
             <button name="botao" class="btn" type="submit">Entrar</button><!--manda as informações para o local action --></br>
-            <a href= "senha.html" id="esqueceu" name="cadastro_senha" target=_self color blue >Esqueceu sua senha?</a> 
+            </div>
+
+            <div class="esqueceu">
+            <a href= "login.html"  name="cadastro_senha" target=_self color blue >Esqueceu sua senha?</a> 
+            </div>
+
 
             </br>
             </br>
-            <!-- _blank(nova janela),_self(mesma janela)Padrão-->
+            
 
+            <div class="link">
             <a href= "cadastro.html" name="link_cadastro" target=_self color blue >Clique aqui para fazer o seu Cadastro</a> 
+            </div>
 
             </br>
             </br>
@@ -75,81 +84,6 @@
         
 
         </form>
-            </br>
-
-        <form action="" method='post'>
-            <label for='';>Campo</label>
-            <input type="text">
-            <button name="botao" class="btn" type="submit">Salvar Dados</button>
-        </form>
-
-
-        
-        
-
-
-
-
-
-
-
-
-
-
-
-        <table width='800' cellspacing='5' border='1'>
-            <!--cabeçalho-->
-            <thead>
-                <!--linhas-->
-                <tr>
-                    <!--colunas-->
-                    <td>Nome</td>
-                    <td>Email</td>
-                    <td>RA</td>
-                    <td>Tel</td>
-                </tr>
-            </thead>
-            <!--Corpo-->
-            <tbody>
-                <!--linhas-->
-                <tr>
-                    <!--colunas-->
-                    <td>Luiz Carlos</td>
-                    <td>luiz.lourenco@alunoimpacta.com.br</td>
-                    <td>1900963</td>
-                    <td>97449-2689</td>
-                </tr>
-                <!--linhas-->
-                <tr>
-                    <!--colunas-->
-                    <td>Italo de Souza</td>
-                    <td>italo.souza@aluno.faculdadeimpacta.com.br</td>
-                    <td>1901119</td>
-                    <td>98806-8868</td>
-                </tr>
-                <!--linhas-->
-                <tr>
-                    <!--colunas-->
-                    <td>Gabriel de Lima Santos</td>
-                    <td>gabriel.delima@aluno.faculdadeimpacta.com.br</td>
-                    <td>1900214</td>
-                    <td>99130-7037</td>
-                </tr>
-                <!--linhas-->
-                <tr>
-                    <!--colunas-->
-                    <td>Lucas Patriarca Schmidt de Matos</td>
-                    <td>lucas.matos@aluno.faculdadeimpacta.com.br</td>
-                    <td>1900745</td>
-                    <td>94303-9845</td>
-                </tr>
-
-            </tbody>
-
-        </table>
-        
-
-
 
 	</body>
 </html>
