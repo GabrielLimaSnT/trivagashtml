@@ -1,39 +1,90 @@
+body{		
+    margin: 0;
 
-body{
+}
+
+.menu ul{
+    margin: 0;
+    background-color: rgb(15, 209, 235);
+    list-style: none;
+        }
+        
+.menu ul li{
     background-color:white;
+    display: inline;
 }
 
+.menu ul li a{
+    color: black;
+    padding: 10px 85px;
+    display: inline-block;
+}
 
-.div-titulo{
-    background-color: aqua;
-    border-radius: 56%;
-    width: 1300px;
-    height: 90px;
-    padding: 20px;
-    color: blueviolet;
-    font-family: Arial, Helvetica, sans-serif;
+.img_principal{
+    margin-left: auto ;
+    margin-right: auto;
+    width: 85em;
+
+}
+
+.divBusca{
     text-align: center;
-    font-size: 30px;
+    background-color:#E0EEEE;
+    border:solid 2px #5F9EA0;
+    border-radius:10px;
+    width:300px;
+    height:32px;
 }
+  
+  #txtBusca{
+    float:left;
+    background-color:transparent;
+    padding-left:5px;
+    font-size:18px;
+    border:none;
+    height:32px;
+    width:191px;
+}
+  
+  #btnBusca{  
+    border:none;
+    float:left;
+    height:32px;
+    border-radius:0 7px 7px 0;
+    width:70px;
+    font-weight:bold;
+    background:#5F9EA0;
+}
+
+
+
 
 .login{
     color: black;
     font-size: 30px;
+    text-align: center;
 }
 
 .email{
     color: green;
     font-size: 20px;
+    text-align: center;
 }
 
-#esqueceu{
+.esqueceu{
     color:rgb(226, 43, 43);
     font-size: 20px;
+    text-align: center;
+}
+
+.link{
+    text-align: center;
 }
 
 a:hover{
     color: red;
     font-size: 40px;
+    text-align: center;
 }
 
 .foto1 {
@@ -41,6 +92,22 @@ a:hover{
     margin-right: auto;
     width: 30em;
 }   
+
+
+.usuario{
+    color: black;
+    font-size: 20px;
+    text-align: center;
+
+}
+
+.senha{
+    color: black;
+    font-size: 20px;
+    text-align: center;
+
+}
+
 
 
 
