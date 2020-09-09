@@ -10,7 +10,7 @@
         
 
 	</head>
-    <body><!-- Corpo -->
+    <body class="cordefundo"><!-- Corpo -->
         
 		<div class="div-titulo">    
             <!-- <h1> Titulo-->
@@ -23,130 +23,136 @@
 
         </br></br></br></br></br></br></br></br></br></br></br><br>
 
+        <form>
+            <div>
+                <h1><u>Informações Pessoais</u></h1><br>
+                Seu genero é ?
+                <!--radio button--> 
+                <form action="">
+                    <input type="radio" name="sexo" value="Masculino"> Masculino<br>
+                    <input type="radio" name="sexo" value="Feminino"> Feminino<br>
+                    <input type="radio" name="sexo" value="Outro"> Outro
+                </form>
+                </br></br>
 
-        <div>
-            <h1><u>Informações Pessoais</u></h1><br>
-             Seu genero é ?
-            <!--radio button--> 
-            <form action="">
-                <input type="radio" name="sexo" value="Masculino"> Masculino<br>
-                <input type="radio" name="sexo" value="Feminino"> Feminino<br>
-                <input type="radio" name="sexo" value="Outro"> Outro
-            </form>
-            </br></br>
+                <!--Formulario-->
+                <label >Nome</label>
+                <input required="required" name="Nome" type="text">
 
-            <!--Formulario-->
-            <label >Nome</label>
-            <input required="required" name="Nome" type="text">
+                <label >Sobrenome</label>
+                <input required="required" name="Sobrenome" type="text">
 
-            <label >Sobrenome</label>
-            <input required="required" name="Sobrenome" type="text">
+                <label >Data de Nascimento</label>
+                <input required="required" name="Sobrenome" type="text"><br></br>
 
-            <label >Data de Nascimento</label>
-            <input required="required" name="Sobrenome" type="text"><br></br>
+                <label >Endereco</label>
+                <input required="required" name="Endereco" type="text">
 
-            <label >Endereco</label>
-            <input required="required" name="Endereco" type="text">
+                <label >Numero</label>
+                <input required="required" name="Numero" type="text">
 
-            <label >Numero</label>
-            <input required="required" name="Numero" type="text">
+                <label >Complemento</label>
+                <input required="required" name="Complemento" type="text"><br></br>
 
-            <label >Complemento</label>
-            <input required="required" name="Complemento" type="text"><br></br>
+                <label >Bairro</label>
+                <input required="required" name="Bairro" type="text">
 
-            <label >Bairro</label>
-            <input required="required" name="Bairro" type="text">
+                <label >CEP</label>
+                <input required="required" name="CEP" type="text">
 
-            <label >CEP</label>
-            <input required="required" name="CEP" type="text">
+                <!--drop down list-->
+            <select required name="Estado">
+                <option selected value="Selecione">Selecione seu Estado</option>
+                <option value="AC">Acre (AC)</option>
+                <option value="AL">Alagoas (AL)</option>
+                <option value="AP">Amapá (AP)</option>
+                <option value="AM">Amazonas (AM)</option>
+                <option value="BA">Bahia (BA)</option>
+                <option value="CE">Ceará (CE)</option>
+                <option value="DF">Distrito Federal (DF)</option>
+                <option value="ES">Espírito Santo (ES)</option>
+                <option value="GO">Goiás (GO)</option>
+                <option value="MA">Maranhão (MA)</option>
+                <option value="MT">Mato Grosso (MT)</option>
+                <option value="MS">Mato Grosso do Sul (MS)</option>
+                <option value="MG">Minas Gerais (MG)</option>
+                <option value="PA">Pará (PA)</option>
+                <option value="PB">Paraíba (PB)</option>
+                <option value="PR">Paraná (PR)</option>
+                <option value="PE">Pernambuco (PE)</option>
+                <option value="PI">Piauí (PI)</option>
+                <option value="RJ">Rio de Janeiro (RJ)</option>
+                <option value="RN">Rio Grande do Norte (RN)</option>
+                <option value="RS">Rio Grande do Sul (RS)</option>
+                <option value="RO">Rondônia (RO)</option>
+                <option value="RR">Roraima (RR)</option>
+                <option value="SC">Santa Catarina (SC)</option>
+                <option value="SP">São Paulo (SP)</option>
+                <option value="SE">Sergipe (SE)</option>
+                <option value="TO">Tocantins (TO)</option>
+            </select>
 
-            <!--drop down list-->
-        <select required name="Estado">
-            <option selected value="Selecione">Selecione seu Estado</option>
-            <option value="AC">Acre (AC)</option>
-            <option value="AL">Alagoas (AL)</option>
-            <option value="AP">Amapá (AP)</option>
-            <option value="AM">Amazonas (AM)</option>
-            <option value="BA">Bahia (BA)</option>
-            <option value="CE">Ceará (CE)</option>
-            <option value="DF">Distrito Federal (DF)</option>
-            <option value="ES">Espírito Santo (ES)</option>
-            <option value="GO">Goiás (GO)</option>
-            <option value="MA">Maranhão (MA)</option>
-            <option value="MT">Mato Grosso (MT)</option>
-            <option value="MS">Mato Grosso do Sul (MS)</option>
-            <option value="MG">Minas Gerais (MG)</option>
-            <option value="PA">Pará (PA)</option>
-            <option value="PB">Paraíba (PB)</option>
-            <option value="PR">Paraná (PR)</option>
-            <option value="PE">Pernambuco (PE)</option>
-            <option value="PI">Piauí (PI)</option>
-            <option value="RJ">Rio de Janeiro (RJ)</option>
-            <option value="RN">Rio Grande do Norte (RN)</option>
-            <option value="RS">Rio Grande do Sul (RS)</option>
-            <option value="RO">Rondônia (RO)</option>
-            <option value="RR">Roraima (RR)</option>
-            <option value="SC">Santa Catarina (SC)</option>
-            <option value="SP">São Paulo (SP)</option>
-            <option value="SE">Sergipe (SE)</option>
-            <option value="TO">Tocantins (TO)</option>
-        </select>
+            <br></br>
 
-        <br></br>
+                <label >Celular</label>
+                <input required="required" name="Celular" type="text">
 
-            <label >Celular</label>
-            <input required="required" name="Celular" type="text">
+                <label >Tel Residencial</label>
+                <input required="required" name="Tresidencial" type="text">
 
-            <label >Tel Residencial</label>
-            <input required="required" name="Tresidencial" type="text">
+                <label >Tel Recado</label>
+                <input required="required" name="Recado" type="text"><br></br>
+                
+                <label >Email</label>
+                <input required="required" name="Email" type="text"><br></br>
 
-            <label >Tel Recado</label>
-            <input required="required" name="Recado" type="text"><br></br>
-            
-            <label >Email</label>
-            <input required="required" name="Email" type="text"><br></br>
+                <label >Nome da Mae</label>
+                <input required="required" name="Nome da Mãe" type="text"><br></br>
 
-            <label >Nome da Mae</label>
-            <input required="required" name="Nome da Mãe" type="text"><br></br>
+                <label >CPF</label>
+                <input required="required" name="CPF" type="text"><br></br>
 
-            <label >CPF</label>
-            <input required="required" name="CPF" type="text"><br></br>
+                <form action="">
+                    Possui alguma deficiencia ?</br>
+                    <input type="radio" name="defi" type="text"> Sim
 
-            <form action="">
-                Possui alguma deficiencia ?</br>
-                <input type="radio" name="defi" type="text"> Sim
-
-                <input type="radio" name="defi" value="Não"> Não
-            </form>
+                    <input type="radio" name="defi" value="Não"> Não
+                </form>
+                </br>
+                <label >Se Sim qual ?</label>
+                    <input required="required" name="Sim" type="text"><br></br>
+            </div>
             </br>
-            <label >Se Sim qual ?</label>
-                <input required="required" name="Sim" type="text"><br></br>
-        </div>
-    </br>
     
         
-        </br>
+            </br>
 
 
-        <div>
-            <p>Selecione as áreas de interesse:</p>
-            <input checked name="areas" value='BD' type='checkbox'> Banco de Dados
-            <input  name="areas" value='ADS' type='checkbox'> Analise de Sistema
-            <input  name="areas" value='IF' type='checkbox'> Infraestrutura
-        </div>
-        </br>
-        <!--Enviar Arquivo-->
-        <form enctype="multpart/form-data">
-            <input name="arquivo" type="file">
-        </form> 
-        </br>
-        </br>  
+            <div>
+                <p>Selecione as áreas de interesse:</p>
+                <input checked name="areas" value='BD' type='checkbox'> Banco de Dados
+                <input  name="areas" value='ADS' type='checkbox'> Analise de Sistema
+                <input  name="areas" value='IF' type='checkbox'> Infraestrutura
+            </div>
+            </br>
+            <!--Enviar Arquivo
+            <form enctype="multpart/form-data">
+                <input name="arquivo" type="file">
+            </form> 
+            </br>
+            </br>  -->
 
-        <form> 
-            <textarea name="texto" placeholder="Conte-nos um pouco da sua história..." cols='40' rows="20"></textarea>
-        </br>
+            
+                <textarea name="texto" placeholder="Conte-nos um pouco da sua história..." cols='40' rows="20"></textarea>
+                </br>
+            
+                <action="" method="get">
+                <button type="submit">Concluir Cadastro</button>
+                </br></br></br>
         </form>
-        
+
+
+
         <!-- _blank(nova janela),_self(mesma janela)Padrão-->
         <a href= "index.html" target=_self >Pagina Inicial </a> 
         </br>
